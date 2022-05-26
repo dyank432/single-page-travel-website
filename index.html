@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png">
+    <!-- <script src="script.js"></script> -->
+    <script src="apidetails.js"></script>
+    <script src="filters.js"></script>
+    <script src="generate.js"></script>
+    <script src="helpers.js"></script>
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>COMP 3512 - Assign1</h1>
+        </header>
+        <div class="sidebar">
+            <div class="Countryfilters">
+                <h4>Country Filters</h4>            
+                <p>Name:</p>
+                <input type="text" name="nameFilter" placeholder="name" />
+                <div class="imageFilterContainer">
+                    <p>Image(s) Available:</p>
+                    <button class="clickable" id="imageFilter" type="button">image available</button>
+                </div>
+                <div class="continentFilterContainer">
+                    <p>Continent:</p>
+                    <div>
+                        <input type="checkbox" id="AF" name="Africa">
+                        <label class="clickable" for="AF">Africa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="AN" name="Antarctica">
+                        <label class="clickable"  for="AN">Antarctica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="AS" name="Asia">
+                        <label class="clickable"  for="AS">Asia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="EU" name="Europe">
+                        <label class="clickable"  for="EU">Europe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="NA" name="NorthAmerica">
+                        <label class="clickable"  for="NA">North America</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="OC" name="Oceania">
+                        <label class="clickable"  for="OC">Oceania</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="SA" name="SouthAmerica">
+                        <label class="clickable"  for="SA">South America</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button class="clickable" id="clearCountryFilters" type="button">clear filters</button>
+                </div>
+                <br>
+                    <small class="clickable">collapse</small>
+            </div>
+
+            <div class="Countrylist">
+                <h4>Country List</h4>
+                <div class="filteredCountryList">
+                </div>
+            </div>
+            <div class="Cityfilters hidden">
+                <h4>City Filters</h4>
+                <p>Name:</p>
+                <input type="text" name="cityNameFilter" id="cityNameFilter" placeholder="name" />
+                <div class="imageFilterContainer">
+                    <p>Image(s) Available:</p>
+                    <button class="clickable" id="cityImageFilter" type="Button">image available</button>
+                </div>
+                <br>
+                <div>
+                    <button class="clickable" id="clearCityFilters" type="button">clear filters</button>
+                </div>
+                <br>
+                <small class="clickable">collapse</small>
+            </div>
+            <div class="CityList">
+                <h4>City List</h4>
+                <div class="filteredCityList">
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="Cdetails">
+                <h4>Country + City details</h4>
+                <div class="details">
+                       
+                </div>
+            </div>
+
+            <div class="Cmaps">
+                <h4>Country + City Maps</h4>
+                <div class="googlemap"></div>
+            </div>
+        </main>
+
+        <div class="Gallery">
+        </div>
+
+        <div class="photoView hidden">
+            <div class="photoViewPhoto">
+                <div class="hoverView hidden">
+
+                </div>
+                <div class=photo>
+                        
+                </div>
+            </div>
+                <div class="bio">
+                    <button class="clickable" id="speak" type="button">speak</button>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="clickable" id="photoclose" type="button">close</button>
+                    <br>
+                    <div class="desc">
+                    </div>
+                </div>
+                <div class="tabs">
+                    <button type="button" class="clickable active" id="description">description</button>
+                    <button type="button" class="clickable" id="details">details</button>
+                    <button type="button" class="clickable" id="map">map</button>
+                    <div class="photoViewDescription placeholder">
+                        <!-- desc -->
+                    </div>
+                    <div class="photoViewDetails hidden">
+                         <!-- details  -->
+                    </div>
+                    <div class="photoViewMap hidden">
+                        <!-- map -->
+                        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=REDACTED" async></script> -->
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
